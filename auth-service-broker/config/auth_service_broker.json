@@ -1,0 +1,42 @@
+{
+  "catalog": {
+    "apiVersion": "2.4.0",
+    "defaultVersion": "1.0",
+    "name": "auth_service_broker",
+    "url": "auto",
+    "services": [
+      {
+        "id": "AuthService",
+        "bindable": true,
+        "name": "AuthService",
+        "version": "1.0",
+        "description": "Provides AuthService instance Details",
+        "metadata": {
+          "providerDisplayName": "Auth",
+          "tags": [
+            "tag1",
+            "tag2",
+            "tag3"
+          ]
+        },
+        "plans": [
+          {
+            "name": "free",
+            "id": "auth_plan",
+            "description": "free",
+            "public": true,
+            "free": true
+          }
+        ]
+      }
+    ]
+  },
+  "plans": {
+    "auth_plan": {
+      "parameters": {
+        "key1": "value1",
+        "key2": "value2"
+      }
+    }
+  }
+}
